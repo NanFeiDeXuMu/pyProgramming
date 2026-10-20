@@ -1,0 +1,18 @@
+{
+  "selection_metric": "3500-image official development accuracy",
+  "selection_accuracy": 0.6677,
+  "audit_used_for_selection": false,
+  "training_threads": 1,
+  "tiny_value_threshold": 1e-20,
+  "horizontal_tta": true,
+  "weights": [1, 1, 1, 1, 1, 1, 1],
+  "members": [
+    {"name": "raw", "clusters": 512, "patch_size": 6, "n_patches": 60000, "smooth_sigma": 0, "augmentation_mode": "robust", "augmentation_ratio": 2.0, "hidden_layers": [384, 128], "alpha": 5.0, "learning_rate": 0.0005, "epochs": 5},
+    {"name": "strong", "clusters": 512, "patch_size": 6, "n_patches": 60000, "smooth_sigma": 0, "augmentation_mode": "robust2", "augmentation_ratio": 2.0, "hidden_layers": [384, 128], "alpha": 5.0, "learning_rate": 0.0005, "epochs": 15},
+    {"name": "largepatch", "clusters": 512, "patch_size": 8, "n_patches": 60000, "smooth_sigma": 0, "augmentation_mode": "robust", "augmentation_ratio": 2.0, "hidden_layers": [384, 128], "alpha": 5.0, "learning_rate": 0.0005, "epochs": 15},
+    {"name": "smooth", "clusters": 1024, "patch_size": 6, "n_patches": 60000, "smooth_sigma": 0.6, "augmentation_mode": "robust", "augmentation_ratio": 1.0, "hidden_layers": [384, 128], "alpha": 5.0, "learning_rate": 0.0005, "epochs": 23},
+    {"name": "median3", "clusters": 512, "patch_size": 6, "n_patches": 60000, "smooth_sigma": 0, "preprocess": "median3", "augmentation_mode": "robust", "augmentation_ratio": 2.0, "hidden_layers": [384, 128], "alpha": 5.0, "learning_rate": 0.0005, "epochs": 15},
+    {"name": "gray", "clusters": 512, "patch_size": 6, "n_patches": 60000, "smooth_sigma": 0, "preprocess": "gray", "augmentation_mode": "robust", "augmentation_ratio": 2.0, "hidden_layers": [384, 128], "alpha": 5.0, "learning_rate": 0.0005, "epochs": 14},
+    {"name": "lowres", "clusters": 512, "patch_size": 6, "n_patches": 60000, "smooth_sigma": 0, "preprocess": "lowres", "augmentation_mode": "robust", "augmentation_ratio": 2.0, "hidden_layers": [384, 128], "alpha": 5.0, "learning_rate": 0.0005, "epochs": 7}
+  ]
+}

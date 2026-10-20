@@ -1,0 +1,8 @@
+student_data/
+student_data.zip
+.cache/
+*.joblib
+submission/*.zip
+__pycache__/
+training_temp_*/
+submission_v1_backup/

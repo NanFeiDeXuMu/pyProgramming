@@ -1,0 +1,7 @@
+{
+  "train_images": 50000,
+  "validation_images": 5000,
+  "exact_duplicate_training_images": 0,
+  "exact_duplicate_validation_images": 0,
+  "exact_train_validation_overlap": 0
+}

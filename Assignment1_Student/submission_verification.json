@@ -1,0 +1,57 @@
+{
+  "official_evaluator_source_unchanged": true,
+  "frozen_source_and_data_hashes_match": true,
+  "official_evaluator_all_cells_passed": true,
+  "training_run_all_passed": true,
+  "evaluator_runner_exit_code": 0,
+  "official_scores_match_training_report": true,
+  "classifier_random_states": {
+    "42": [
+      42,
+      42,
+      42,
+      42,
+      42,
+      42,
+      42
+    ],
+    "2026": [
+      2026,
+      2026,
+      2026,
+      2026,
+      2026,
+      2026,
+      2026
+    ],
+    "3102": [
+      3102,
+      3102,
+      3102,
+      3102,
+      3102,
+      3102,
+      3102
+    ]
+  },
+  "archive": "LIU, Yixuan-50027321-AIAA3102-Assignment1.zip",
+  "archive_bytes": 129816463,
+  "files": {
+    "train_models.ipynb": {
+      "bytes": 58079,
+      "sha256": "20d35c5861ca876fdbd241aebcccc2333d6e3881bc6b13f6fcf3375d2b74884f"
+    },
+    "model_seed42.joblib": {
+      "bytes": 43200034,
+      "sha256": "bc5cd45a86843b106d2a42ae9bce2d21dbbe5a6e3ef682b941d10cf71ebedf79"
+    },
+    "model_seed2026.joblib": {
+      "bytes": 43224233,
+      "sha256": "80ab213b2d200dc8f7bd2e646b20a388c582f78ee73d7f32ec485c6c61aa4e01"
+    },
+    "model_seed3102.joblib": {
+      "bytes": 43338890,
+      "sha256": "28d1049d45f1b638dc448abb523b5f970330ccea5623d45aa5da09b1ac483533"
+    }
+  }
+}

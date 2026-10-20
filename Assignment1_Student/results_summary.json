@@ -1,0 +1,203 @@
+{
+  "environment": {
+    "python": "3.14.6",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "scikit-learn": "1.9.0",
+    "joblib": "1.5.3"
+  },
+  "configuration": {
+    "selection_metric": "3500-image official development accuracy",
+    "selection_accuracy": 0.6677,
+    "audit_used_for_selection": false,
+    "training_threads": 1,
+    "tiny_value_threshold": 1e-20,
+    "horizontal_tta": true,
+    "weights": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "members": [
+      {
+        "name": "raw",
+        "clusters": 512,
+        "patch_size": 6,
+        "n_patches": 60000,
+        "smooth_sigma": 0,
+        "augmentation_mode": "robust",
+        "augmentation_ratio": 2.0,
+        "hidden_layers": [
+          384,
+          128
+        ],
+        "alpha": 5.0,
+        "learning_rate": 0.0005,
+        "epochs": 5
+      },
+      {
+        "name": "strong",
+        "clusters": 512,
+        "patch_size": 6,
+        "n_patches": 60000,
+        "smooth_sigma": 0,
+        "augmentation_mode": "robust2",
+        "augmentation_ratio": 2.0,
+        "hidden_layers": [
+          384,
+          128
+        ],
+        "alpha": 5.0,
+        "learning_rate": 0.0005,
+        "epochs": 15
+      },
+      {
+        "name": "largepatch",
+        "clusters": 512,
+        "patch_size": 8,
+        "n_patches": 60000,
+        "smooth_sigma": 0,
+        "augmentation_mode": "robust",
+        "augmentation_ratio": 2.0,
+        "hidden_layers": [
+          384,
+          128
+        ],
+        "alpha": 5.0,
+        "learning_rate": 0.0005,
+        "epochs": 15
+      },
+      {
+        "name": "smooth",
+        "clusters": 1024,
+        "patch_size": 6,
+        "n_patches": 60000,
+        "smooth_sigma": 0.6,
+        "augmentation_mode": "robust",
+        "augmentation_ratio": 1.0,
+        "hidden_layers": [
+          384,
+          128
+        ],
+        "alpha": 5.0,
+        "learning_rate": 0.0005,
+        "epochs": 23
+      },
+      {
+        "name": "median3",
+        "clusters": 512,
+        "patch_size": 6,
+        "n_patches": 60000,
+        "smooth_sigma": 0,
+        "preprocess": "median3",
+        "augmentation_mode": "robust",
+        "augmentation_ratio": 2.0,
+        "hidden_layers": [
+          384,
+          128
+        ],
+        "alpha": 5.0,
+        "learning_rate": 0.0005,
+        "epochs": 15
+      },
+      {
+        "name": "gray",
+        "clusters": 512,
+        "patch_size": 6,
+        "n_patches": 60000,
+        "smooth_sigma": 0,
+        "preprocess": "gray",
+        "augmentation_mode": "robust",
+        "augmentation_ratio": 2.0,
+        "hidden_layers": [
+          384,
+          128
+        ],
+        "alpha": 5.0,
+        "learning_rate": 0.0005,
+        "epochs": 14
+      },
+      {
+        "name": "lowres",
+        "clusters": 512,
+        "patch_size": 6,
+        "n_patches": 60000,
+        "smooth_sigma": 0,
+        "preprocess": "lowres",
+        "augmentation_mode": "robust",
+        "augmentation_ratio": 2.0,
+        "hidden_layers": [
+          384,
+          128
+        ],
+        "alpha": 5.0,
+        "learning_rate": 0.0005,
+        "epochs": 7
+      }
+    ]
+  },
+  "models": [
+    {
+      "seed": 42,
+      "validation_accuracy": 0.6694,
+      "development_accuracy": 0.668,
+      "audit_accuracy": 0.6726666666666666,
+      "model_bytes": 43200034,
+      "member_seconds": [
+        246.38,
+        376.29,
+        476.27,
+        712.08,
+        440.86,
+        372.18,
+        324.46
+      ],
+      "export_evaluation_seconds": 58.23,
+      "sha256": "bc5cd45a86843b106d2a42ae9bce2d21dbbe5a6e3ef682b941d10cf71ebedf79"
+    },
+    {
+      "seed": 2026,
+      "validation_accuracy": 0.6734,
+      "development_accuracy": 0.6705714285714286,
+      "audit_accuracy": 0.68,
+      "model_bytes": 43224233,
+      "member_seconds": [
+        246.7,
+        376.33,
+        477.54,
+        711.8,
+        441.33,
+        372.4,
+        325.18
+      ],
+      "export_evaluation_seconds": 57.67,
+      "sha256": "80ab213b2d200dc8f7bd2e646b20a388c582f78ee73d7f32ec485c6c61aa4e01"
+    },
+    {
+      "seed": 3102,
+      "validation_accuracy": 0.6672,
+      "development_accuracy": 0.6662857142857143,
+      "audit_accuracy": 0.6693333333333333,
+      "model_bytes": 43338890,
+      "member_seconds": [
+        247.01,
+        376.31,
+        477.23,
+        710.89,
+        441.83,
+        373.67,
+        324.86
+      ],
+      "export_evaluation_seconds": 59.52,
+      "sha256": "28d1049d45f1b638dc448abb523b5f970330ccea5623d45aa5da09b1ac483533"
+    }
+  ],
+  "mean_validation_accuracy": 0.6699999999999999,
+  "mean_audit_accuracy": 0.674,
+  "all_models_under_100MB": true,
+  "fresh_process_loading_passed": true
+}

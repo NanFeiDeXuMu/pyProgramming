@@ -1,0 +1,18 @@
+{
+  "phase": "v2 seven-member recipe frozen before final training and audit scoring",
+  "environment": {
+    "python": "3.14.6",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "sklearn": "1.9.0",
+    "joblib": "1.5.3"
+  },
+  "sha256": {
+    "final_config.json": "a50159dfdc14b44b33cafc84c7ca96c3101d53256133057a402afd063f79c1d1",
+    "assignment_model.py": "6d0e82783ef092a300fdef4fde38528473a199955e5851b3452f7c10243183ee",
+    "final_training.py": "a83eda7f4a830e33901e25ee5663d197d43062e398479a14bf1f433769f0439f",
+    "student_data.zip": "99d413d59590ab7821051ad05608b0c04c9ea2867a4e899fcaa607cb60e83e0b"
+  },
+  "execution": "Three independent processes; identical frozen recipe and seeds; single-process execution also supported.",
+  "notebook_code_sha256": "291636d697de66b8c8cfb486b45be0873483f0dc32e215995ad80c4818504210"
+}

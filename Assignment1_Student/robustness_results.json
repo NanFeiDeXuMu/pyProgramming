@@ -1,0 +1,35 @@
+{
+  "note": "Post-selection diagnostic only. Development models trained on 45000 images; these 1000 original identities were held out. These are not the final 50000-image-fit models or hidden-test scores.",
+  "results": [
+    {
+      "condition": "clean",
+      "n": 1000,
+      "baseline_accuracy": 0.611,
+      "selected_ensemble_accuracy": 0.775
+    },
+    {
+      "condition": "gaussian_noise_sigma35",
+      "n": 1000,
+      "baseline_accuracy": 0.281,
+      "selected_ensemble_accuracy": 0.547
+    },
+    {
+      "condition": "blur_sigma1.5",
+      "n": 1000,
+      "baseline_accuracy": 0.412,
+      "selected_ensemble_accuracy": 0.638
+    },
+    {
+      "condition": "unseen_pixelation_4x",
+      "n": 1000,
+      "baseline_accuracy": 0.144,
+      "selected_ensemble_accuracy": 0.339
+    },
+    {
+      "condition": "unseen_grayscale",
+      "n": 1000,
+      "baseline_accuracy": 0.557,
+      "selected_ensemble_accuracy": 0.639
+    }
+  ]
+}
